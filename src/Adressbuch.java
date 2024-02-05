@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Anschrift {
+public class Adressbuch {
 
     String vorname;
     String nachname;
@@ -10,13 +10,13 @@ public class Anschrift {
     String ort;
     String email;
 
-    Anschrift() {
+    Adressbuch() {
         eingaben();
         menu();
     }
 
-    Anschrift(String vorname, String nachname, String strasse,
-              String hausNummer, Integer plz, String ort, String email) {
+    Adressbuch(String vorname, String nachname, String strasse,
+               String hausNummer, Integer plz, String ort, String email) {
         this.vorname = vorname;
         this.nachname = nachname;
         this.strasse = strasse;
@@ -85,6 +85,6 @@ public class Anschrift {
     }
 
     public static void main(String[] args) {
-        Anschrift person1 = new Anschrift();
+        Adressbuch person1 = new Adressbuch();
     }
 }
